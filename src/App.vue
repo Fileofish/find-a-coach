@@ -5,14 +5,15 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import TheHeader from './components/layout/TheHeader.vue';
+import { defineComponent } from 'vue';
 
-export default {
+export default defineComponent({
   components: {
     TheHeader,
   },
-};
+});
 </script>
 
 <style lang="scss">
