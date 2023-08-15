@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
-import CoachDetail from '@/views/coaches/CoachesList.vue';
+import CoachDetails from '@/views/coaches/CoachDetails.vue';
 import CoachesList from '@/views/coaches/CoachesList.vue';
 import CoachRegistration from '@/views/coaches/CoachRegistration.vue';
 import ContactCoach from '@/views/requests/ContactCoach.vue';
@@ -18,7 +18,8 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/coaches/:id',
-    component: CoachDetail,
+    component: CoachDetails,
+    props: true,
     children: [
       {
         path: 'contact',
