@@ -25,7 +25,7 @@ export default defineComponent({
   },
   computed: {
     fullName() {
-      return this.firstName + ' ' + 'lastName';
+      return this.firstName + ' ' + this.lastName;
     },
     coachContactLink() {
       return this.$route.path + '/' + this.id + '/contact';
